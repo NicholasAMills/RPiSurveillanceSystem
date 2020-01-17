@@ -1,13 +1,13 @@
 '''
     @author:
-        Nicholas Mills,
+        Nicholas Mills
         nicholas_mills@outlook.com
         completion date: Jan 17, 2020
 
     This project was built and tested using:
         Raspberry Pi 4 model B
-        PiCamera v2
-        HC-SR501 Adjust Ir Pyroelectric JInfrared PIR Motion Sensor Detector Modules
+        Raspberry Pi Camera V2 8MP
+        HC-SR501 Adjust Ir Pyroelectric Infrared PIR Motion Sensor Detector Module
 '''
 
 from gpiozero import LED, Button, MotionSensor
