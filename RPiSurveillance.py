@@ -95,12 +95,7 @@ def send_email(filename):
     send_email function
 '''
 def main():
-    running = True # Keep running unless button is pressed
-    while running:
-        # button.wait_for_press()
-        if button.is_pressed(): # if button is pressed, force quit
-            running = False
-
+    while True:
         pir.wait_for_motion() # waits for motion
         if send_email(take_picture()): # If send_email passes, turn the green LED on
             GREEN.on()
