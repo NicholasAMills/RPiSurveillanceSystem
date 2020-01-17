@@ -19,7 +19,7 @@ button = Button(2) # Button is on GPIO pin 2
 camera = PiCamera()
 camera.framerate = 60
 camera.resolution = (1920, 1080)
-pir = MotionSensor(22)
+pir = MotionSensor(22) # PIR motion sensor on GPIO pin 22
 
 # Force LEDs off since if they're on while program is running before being told to turn off, they'll stay on
 GREEN.off()
