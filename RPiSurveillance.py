@@ -103,6 +103,7 @@ def main():
             GREEN.off() # turn off after 2 seconds
         else:
             RED.on() # If send_email fails, turn on red LED
+            quit() # If there's an error, quit the program
         pir.wait_for_no_motion() # wait for no motion to help prevent spam
 
 # Call main function
