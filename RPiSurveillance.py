@@ -1,3 +1,15 @@
+'''
+    @author:
+        Nicholas Mills,
+        nicholas_mills@outlook.com
+        completion date: Jan 17, 2020
+
+    This project was built and tested using:
+        Raspberry Pi 4 model B
+        PiCamera v2
+        HC-Sr501 Adjust Ir Pyroelectric JInfrared PIR Motion Sensor Decector Modules
+'''
+
 from gpiozero import LED, Button, MotionSensor
 from time import sleep
 import smtplib
@@ -41,7 +53,6 @@ def take_picture():
     camera.capture('/home/pi/mu_code/Captures/image%s.jpg' % counter) # capture and store picture
     capture_name = '/home/pi/mu_code/Captures/image%s.jpg' % counter # store directory
     return capture_name # return directory to pass into send_email()
-
 
 '''
     Upon successful try:
