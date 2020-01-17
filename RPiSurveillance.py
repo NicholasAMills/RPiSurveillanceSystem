@@ -7,7 +7,7 @@
     This project was built and tested using:
         Raspberry Pi 4 model B
         PiCamera v2
-        HC-Sr501 Adjust Ir Pyroelectric JInfrared PIR Motion Sensor Decector Modules
+        HC-SR501 Adjust Ir Pyroelectric JInfrared PIR Motion Sensor Detector Modules
 '''
 
 from gpiozero import LED, Button, MotionSensor
@@ -60,11 +60,15 @@ def take_picture():
         True to set flag for green LED
     except:
         returns False to set flag for red LED
+
+    Code referenced from:
+        HowToFAQ
+        https://bit.ly/2TAMKWe
 '''
 def send_email(filename):
     try:
         email_user = 'YOUR EMAIL HERE' # from sender (your email)
-        email_password = 'YOUR EMAIL PASSWORD' # your email password
+        email_password = 'YOUR EMAIL PASSWORD HERE' # your email password
         email_send = 'RECEIVERS EMAIL HERE' # receiver's email
 
         subject = 'MOTION DETECTED' # email subject
