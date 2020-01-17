@@ -95,21 +95,20 @@ def send_email(filename):
     send_email function
 '''
 def main():
-    # Button
-    running = True
+    running = True # Keep running unless button is pressed
     while running:
         # button.wait_for_press()
-        if button.is_pressed():
+        if button.is_pressed(): # if button is pressed, force quit
             running = False
 
-        pir.wait_for_motion()
+        pir.wait_for_motion() # waits for motion
         if send_email(take_picture()): # If send_email passes, turn the green LED on
             GREEN.on()
             sleep(2)
             GREEN.off() # turn off after 2 seconds
         else:
             RED.on() # If send_email fails, turn on red LED
-        pir.wait_for_no_motion()
+        pir.wait_for_no_motion() # wait for no motion to help prevent spam
 
 # Call main function
 main()
