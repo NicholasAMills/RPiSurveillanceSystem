@@ -9,10 +9,10 @@
 
 class Login():
     def get_username():
-        return 'your gmail here' # enter a gmail account here inside the single quotes. This must be a gmail account.
+        return 'gmail account here' # enter a gmail account here inside the single quotes. This must be a gmail account.
 
     def get_password():
-        return 'your gmail password here' # enter your gmail password here inside the single quotes
+        return 'gmail password here' # enter your gmail password here inside the single quotes
 
     def get_recipient():
-        return 'recipient email here' # enter destination email inside the single quotes
+        return 'email you wish to receive pictures' # enter destination email inside the single quotes

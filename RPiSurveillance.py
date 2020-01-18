@@ -22,7 +22,7 @@ from time import sleep
 import os.path
 from os import path
 from datetime import datetime
-from cred import Login
+from credentials import Login
 
 
 # Variables
@@ -110,12 +110,18 @@ def send_email(filename):
     send_email function
 '''
 def main():
+    try:
+        # create Captures folder to hold pictures
+        os.makedirs('/home/pi/mu_code/Captures/')
+    except FileExistsError:
+        # directory already exists
+        pass
     while True:
         pir.wait_for_motion() # waits for motion
         if send_email(take_picture()): # If send_email passes, turn the green LED on
             GREEN.on()
-            sleep(2)
-            GREEN.off() # turn off after 2 seconds
+            sleep(3)
+            GREEN.off() # turn off after 3 seconds
         else:
             RED.on() # If send_email fails, turn on red LED
             quit() # If there's an error, quit the program
