@@ -17,7 +17,7 @@ Instructions:
 
 3. Motion sensor: Double check pins! Remove the white cap to view which pin is what. Connect "out" to GPIO pin 22. Connect VCC pin to the 5v pin. Connect Gnd to ground.
 
-4. Open "cred.py" and type in your information. Keep this file safe as it will not hide your password in-editor! You do not need to touch anything in RPiSurveillance.py. Note: inside the "get_username()" function, you need a gmail account. The recipient does not need to be gmail if your primary email isn't through gmail. Otherwise, if gmail is your primary email, the "get_recipient()" should be your normal gmail account as that is where the images will be sent.
+4. Open "credentials.py" and type in your information. Keep this file safe as it will not hide your password in-editor! You do not need to touch anything in RPiSurveillance.py. Note: inside the "get_username()" function, you need a gmail account. The recipient does not need to be gmail if your primary email isn't through gmail. Otherwise, if gmail is your primary email, the "get_recipient()" should be your normal gmail account as that is where the images will be sent.
 
 5. The current capture path is /home/pi/mu_code/Captures/ You will need to make a "Captures" folder inside the "mu_code" directory. This is where the photos taken will be stored.
 
