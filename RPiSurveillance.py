@@ -66,8 +66,8 @@ def take_picture():
 '''
 def send_email(filename):
     try:
-        email_user = 'YOUR EMAIL' # from sender (your email)
-        email_password = 'YOUR PASSORD' # your email password
+        email_user = 'YOUR EMAIL HERE' # from sender (your email)
+        email_password = 'YOUR PASSWORD HERE' # your email password
         email_send = 'RECEIVER EMAIL' # receiver's email
 
         subject = 'MOTION DETECTED' # email subject
