@@ -66,9 +66,9 @@ def take_picture():
 '''
 def send_email(filename):
     try:
-        email_user = 'RPiSurveillance01@gmail.com' # from sender (your email)
-        email_password = '1C@n$33u' # your email password
-        email_send = 'nicholas_mills@outlook.com' # receiver's email
+        email_user = 'YOUR EMAIL' # from sender (your email)
+        email_password = 'YOUR PASSORD' # your email password
+        email_send = 'RECEIVER EMAIL' # receiver's email
 
         subject = 'MOTION DETECTED' # email subject
 
