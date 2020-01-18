@@ -5,9 +5,13 @@ This is a basic surveillance system that will take a picture when a pir motion s
 
 Requirements:
 Two (preferably) different colored LED's
+
 Raspberry Pi Camera
+
 Raspberry Pi with GPIO pins
+
 PIR motion sensor
+
 gmail account
 
 Instructions:
