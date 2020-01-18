@@ -46,12 +46,12 @@ def take_picture():
     counter = 0 # start at image0.jpg
     picture_exists = True # force loop to execute at least once (since do while loops don't exist in python)
     while picture_exists:
-        if path.exists('/home/pi/mu_code/Captures/image%s.jpg' % counter): # if image# exists, increase the number
+        if path.exists('Captures/image%s.jpg' % counter): # if image# exists, increase the number
             counter += 1
         else:
             picture_exists = False
-    camera.capture('/home/pi/mu_code/Captures/image%s.jpg' % counter) # capture and store picture
-    capture_name = '/home/pi/mu_code/Captures/image%s.jpg' % counter # store directory
+    camera.capture('Captures/image%s.jpg' % counter) # capture and store picture
+    capture_name = 'Captures/image%s.jpg' % counter # store directory
     return capture_name # return directory to pass into send_email()
 
 '''
@@ -110,12 +110,6 @@ def send_email(filename):
     send_email function
 '''
 def main():
-    try:
-        # create Captures folder to hold pictures
-        os.makedirs('/home/pi/mu_code/Captures/')
-    except FileExistsError:
-        # directory already exists
-        pass
     while True:
         pir.wait_for_motion() # waits for motion
         if send_email(take_picture()): # If send_email passes, turn the green LED on
