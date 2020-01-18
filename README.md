@@ -1,7 +1,7 @@
 # RPiSurveillanceSystem
 #RPiSurveillanceSystem
 
-This is a basic surveillance system that will take a picture when a pir motion sensor detects motion, and then send the image to a desired email. Upon success, a LED will be lit up for 3 seconds before turning off, ready to take another picture. If an error occurs, the other LED will be lit indefinitely and the program will quit.
+This is a basic surveillance system that will take a picture when a pir motion sensor detects motion, and then send the image to a desired email. Upon success, an LED will be lit up for 3 seconds before turning off, ready to take another picture. If an error occurs, the other LED will be lit indefinitely and the program will quit.
 
 Requirements:
 1. Two (preferably) different colored LED's
