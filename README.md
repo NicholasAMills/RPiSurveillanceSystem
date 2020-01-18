@@ -1,14 +1,14 @@
 # RPiSurveillanceSystem
 #RPiSurveillanceSystem
 
-This is a basic surveillance system that will take a picture when a pir motion sensor detects motion, and then send the image to a desired email. Upon success, a LED will be lit up for 3 seconds before turning off, ready to take another picture. If an error occurs, the other LED will be lit indefinitely and the program will quit.
+This is a basic surveillance system that will take a picture when a pir motion sensor detects motion, and then send the image to a desired email. Upon success, an LED will be lit up for 3 seconds before turning off, ready to take another picture. If an error occurs, the other LED will be lit indefinitely and the program will quit.
 
 Requirements:
-Two (preferably) different colored LED's
-Raspberry Pi Camera
-Raspberry Pi with GPIO pins
-PIR motion sensor
-gmail account
+1. Two (preferably) different colored LED's
+2. Raspberry Pi Camera
+3. Raspberry Pi with GPIO pins
+4. PIR motion sensor
+5. gmail account
 
 Instructions:
 1. Connect one color LED to GPIO pin 17. This will be your "success" light.
