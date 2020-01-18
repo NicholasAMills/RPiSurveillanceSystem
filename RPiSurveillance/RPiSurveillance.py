@@ -104,10 +104,10 @@ def send_email(filename):
 
 
 '''
-    Main function. Waits for button press. Upon press, it takes the picture, sends it
+    Main function. Waits for motion. Once motion is detected, it takes a picture, sends it
     to send_email, and if that goes through it turns the green LED on to indicate a
     success. Otherwise it turns the red LED on to indicate an error occured within the
-    send_email function
+    send_email function and then quit the program
 '''
 def main():
     while True:
