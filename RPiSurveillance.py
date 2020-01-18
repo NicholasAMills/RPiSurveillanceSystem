@@ -10,7 +10,7 @@
         HC-SR501 Adjust Ir Pyroelectric Infrared PIR Motion Sensor Detector Module
 '''
 
-from gpiozero import LED, Button, MotionSensor
+from gpiozero import LED, MotionSensor
 from time import sleep
 import smtplib
 from email.mime.text import MIMEText
@@ -27,7 +27,6 @@ from datetime import datetime
 # Variables
 GREEN = LED(17) # green LED is on GPIO pin 17
 RED = LED(27) # red LED is on GPIO pin 27
-button = Button(2) # Button is on GPIO pin 2
 camera = PiCamera()
 camera.framerate = 60
 camera.resolution = (1920, 1080)
@@ -67,9 +66,9 @@ def take_picture():
 '''
 def send_email(filename):
     try:
-        email_user = 'YOUR EMAIL HERE' # from sender (your email)
-        email_password = 'YOUR EMAIL PASSWORD HERE' # your email password
-        email_send = 'RECEIVERS EMAIL HERE' # receiver's email
+        email_user = 'RPiSurveillance01@gmail.com' # from sender (your email)
+        email_password = '1C@n$33u' # your email password
+        email_send = 'nicholas_mills@outlook.com' # receiver's email
 
         subject = 'MOTION DETECTED' # email subject
 
