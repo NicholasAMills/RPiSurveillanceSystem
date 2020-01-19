@@ -18,7 +18,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email import encoders
 from picamera import PiCamera
-from time import sleep
 import os.path
 from os import path
 from datetime import datetime
