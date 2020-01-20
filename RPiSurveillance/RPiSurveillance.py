@@ -109,6 +109,11 @@ def send_email(filename):
     send_email function and then quit the program
 '''
 def main():
+    # create directory
+    try:
+        os.makedirs("/home/pi/mu_code/RPiSurveillance/Captures/")
+    except FileExistsError:
+        pass
     while True:
         pir.wait_for_motion() # waits for motion
         if send_email(take_picture()): # If send_email passes, turn the green LED on
